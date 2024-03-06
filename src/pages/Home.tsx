@@ -1,22 +1,22 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Button, Typography } from "antd";
 import { MANAGE_LIST_PATHNAME } from "../router";
 import styles from "./Home.module.scss";
 
+import "../_mock/index";
+import axios from "axios";
+
 const { Title, Paragraph } = Typography;
 
 const Home: FC = function () {
   const navigate = useNavigate();
-  // const clickHandler = () => {
-  //   // navigate("/login");
-  //   // navigate("/login?a=20");
-  //   // navigate("/login?a=20", { replace: true });
-  //   navigate({
-  //     pathname: "/login",
-  //     search: "a=20",
-  //   });
-  // };
+
+  useEffect(() => {
+    axios.get("/api/test").then(res => {
+      console.log(res.data);
+    });
+  }, []);
 
   return (
     <div className={styles.container}>

@@ -3,6 +3,7 @@ import styles from "./common.module.scss";
 import QuestionsCard, { QuestionsCardProps } from "../../components/QuestionsCard";
 import { Button, Empty, Modal, Space, Table, Tag, Typography } from "antd";
 import { useTitle } from "ahooks";
+import ListSearch from "../../components/ListSearch";
 
 const { Title } = Typography;
 
@@ -120,7 +121,9 @@ const Trash: FC = function () {
         <Title level={3} className={styles.left}>
           回收站
         </Title>
-        <div className={styles.right}>搜索栏{selectedIds}</div>
+        <div className={styles.right}>
+          <ListSearch></ListSearch>
+        </div>
       </header>
       <main className={styles.main}>
         {questionsList.length === 0 && (

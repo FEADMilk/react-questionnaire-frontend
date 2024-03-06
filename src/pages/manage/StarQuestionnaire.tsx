@@ -3,6 +3,7 @@ import styles from "./common.module.scss";
 import QuestionsCard, { QuestionsCardProps } from "../../components/QuestionsCard";
 import { Empty, Typography } from "antd";
 import { useTitle } from "ahooks";
+import ListSearch from "../../components/ListSearch";
 
 const { Title } = Typography;
 
@@ -56,7 +57,9 @@ const StarQuestionnaire: FC = function () {
         <Title level={3} className={styles.left}>
           星标问卷
         </Title>
-        <div className={styles.right}>搜索栏</div>
+        <div className={styles.right}>
+          <ListSearch></ListSearch>
+        </div>
       </header>
       <main className={styles.main}>
         {questionsList.length === 0 && (
