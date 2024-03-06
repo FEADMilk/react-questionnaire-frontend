@@ -1,0 +1,54 @@
+{
+  // 配置eslint自动格式化代码
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.words": [
+    "ahooks",
+    "antd",
+    "Elems",
+    "Formik",
+    "immer"
+  ],
+  // vue使用prettier格式化
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // css使用prettier格式化
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // json使用prettier格式化
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // js使用prettier格式化
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // html使用prettier格式化
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // 无尾随逗号
+  "prettier.trailingComma": "none",
+  // 统⼀使⽤单引号(‘)，不使⽤双引号(“)
+  "prettier.singleQuote": true,
+  // 在每行末尾加分号
+  "prettier.semi": true,
+  // 缩进
+  "prettier.tabWidth": 2,
+  // 行结束符使用 Unix 格式
+  "prettier.endOfLine": "lf",
+  // 保存时在文件最后插入一个空行
+  "files.insertFinalNewline": true,
+  // 行结束符使用 Unix 格式，设置换行为  LF
+  "files.eol": "\n",
+  "prettier.configPath": "./.prettierrc.js",
+}

@@ -1,0 +1,28 @@
+.container {
+  // background: #f0f0f0;
+  padding: 1rem;
+  height: 100%;
+}
+.header {
+  display: flex;
+
+  .left{
+    flex: 1;
+  }
+
+  .right{
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.footer{
+  display: flex;
+}

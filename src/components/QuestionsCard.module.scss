@@ -1,0 +1,66 @@
+.container{
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+
+  & * {
+    transition: all 0.1s;
+  }
+
+  .text-color--primary{
+    color: #000;
+  }
+
+  .text-color--secondary{
+    color: #9f9f9f;
+  }
+
+  .text-color--third{
+    color: #cfcfcf;
+  }
+
+  .isPublished-container{
+    border: 0.1rem solid #000;
+  }
+
+  .isPublished{
+    color: green;
+  }
+
+  &:hover{
+    box-shadow: 0 0 0.5rem #9f9f9f;
+  }
+
+  .header {
+    display: flex;
+    padding: 0.5rem 0 0.5rem 0;
+  
+    .left{
+      flex: 1;
+    }
+  
+    .right{
+      // flex: 1;
+      text-align: right;
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+  
+  .footer {
+    display: flex;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+
+    .button-container--left{
+      flex: 1;
+    }
+
+    .button-container--right{
+      flex: 1;
+      display: flex;
+      justify-content: end;
+    }
+  }
+  
+}
